@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="game.js"></script>
+</head>
+<body>
+    <h1>JOC DEL PEDRA-PAPER-TISORES</h1>
+    <p>Entra la teva opció per la jugada:</p>
+    <div id="opciones">
+    <form method="post" action="/send">
+        <input type="radio" name="category" id="pedra" value="pedra" checked>Pedra<br>
+        <input type="radio" name="category" id="paper" value="paper" checked>Paper<br>
+        <input type="radio" name="category" id="tisora" value="tisora" checked>Tisora<br>
+    </form><br>
+    </div>
+    <div>
+        <h2>RESULTAT DE LA JUGADA ACTUAL:</h2>
+        <span id="mostrarResultat"></span><br>
+        <span id="mostrarResultatGlobal"></span>
+    </div>
+    <h2>JUGADES GUANYADES I PERDUDES</h2>
+    <div id="resultado1"></div>
+    <div id="Inicialitzacompatadors">
+    <div id="resultado2">
+        <p>Partidas guanyadas: <span id="ganadas">0</span></p>
+        <p>Partidas perdudes: <span id="perdidas">0</span></p>
+        <p>Partidas empatades: <span id="empatadas">0</span></p>
+    </div>
+    <button onclick="NovaJugada()">Nova jugada</button>
+    <button onclick="Esborrarselecció()">Esborrar selecció</button>
+    <button onclick="Inicialitzacompatadors()">Inicialitza compatadors</button>
+    <button onclick="EsborrarResultat()">Esborrar Resultat</button>
+    </div>
+</body>
+</html>
+<!--
+<body>
+    <p>Selecciona una opción:</p>
+    <button onclick="jugar()">Jugar</button>
+    <button onclick="limpiar()">Limpiar</button>
+    <div id="resultado"></div>
+    <div id="contador">
+        <p>Partidas ganadas: <span id="ganadas">0</span></p>
+        <p>Partidas perdidas: <span id="perdidas">0</span></p>
+    </div>
+</body>
+</html>
+--->
